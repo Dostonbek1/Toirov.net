@@ -1,0 +1,68 @@
+{% extends "header.html" %}
+
+{% block body %}
+    <div class="container-fluid" align="" style="min-height:100%; margin-top:15px">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="webDev-tab" data-toggle="tab" href="#webDev" role="tab" aria-controls="webDev" aria-selected="true">Web Dev</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="Python-tab" data-toggle="tab" href="#Python" role="tab" aria-controls="profile" aria-selected="false">Python</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="C++-tab" data-toggle="tab" href="#C++" role="tab" aria-controls="contact" aria-selected="false">C++</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent" style="height:500px; border:1px solid black">
+
+            <div class="tab-pane fade show active" id="webDev" role="tabpanel" aria-labelledby="home-tab">
+                Web Dev
+            </div>
+
+            <div class="tab-pane fade" id="Python" role="tabpanel" aria-labelledby="profile-tab" style="margin-top:20px">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="PyBasics-tab" data-toggle="tab" href="#PyBasics" role="tab" aria-controls="PyBasics" aria-selected="true">Basics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Pygame-tab" data-toggle="tab" href="#Pygame" role="tab" aria-controls="Pygame" aria-selected="false">Pygame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Flask-tab" data-toggle="tab" href="#Flask" role="tab" aria-controls="Flask" aria-selected="false">Flask</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="PythonContent">
+                    <div class="tab-pane fade show active" id="PyBasics" role="tabpanel" aria-labelledby="home-tab">
+
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="border: 1px solid black;display:inline-block;height:400pxwidth:25%;" >
+                                <div align="left" style="text-align:left;">
+                                    {% for t in TOPIC_DICT["Basics"] %}
+                                        <a class="nav-link" data-toggle="pill" href="#v-pills-home" role="tab" aria-selected="false" >{{ t[0] }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent" style="display:inline-block;width:60%;border:1px solid black">
+                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"></div>
+                            </div>
+
+                    </div>
+                    <div class="tab-pane fade show active" id="Pygame" role="tabpanel" aria-labelledby="home-tab">
+                        Pygame
+                    </div>
+                    <div class="tab-pane fade show active" id="Flask" role="tabpanel" aria-labelledby="home-tab">
+                        Flask
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="C++" role="tabpanel" aria-labelledby="contact-tab">
+                C++
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

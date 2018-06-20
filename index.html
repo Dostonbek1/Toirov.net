@@ -24,6 +24,13 @@
   </head>
 
   <body>
+    
+    <p id='test'>Hello, World</p>
+    <script>
+    	//window.onload = alert(localStorage.getItem("enc_bnum") + localStorage.getItem("raw_bnum"));
+
+	    document.getElementById("test").innerHTML = localStorage.getItem("enc_bnum") + localStorage.getItem("raw_bnum");
+    </script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">

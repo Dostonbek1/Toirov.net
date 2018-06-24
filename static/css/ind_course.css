@@ -1,0 +1,49 @@
+.course-name-section {
+    background-image: url(../images/courses.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+.course-name {
+    margin: 100px auto;
+    font-weight: 500;
+    background: rgb(54, 40, 40, 0.9);
+    border-radius: 10px;
+    color: rgb(247, 243, 8);
+}
+
+.course-video-list {
+    border: 1px solid rgb(150, 137, 137);
+    background-color: rgb(247, 240, 240)
+}
+
+.course-video-list-content li {
+    border-bottom: 1px solid rgb(150, 137, 137);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0px;
+    color: black;
+}
+
+.course-video-list-content h6 {
+    margin: 0px;
+}
+
+.course-video-list-content a {
+    text-decoration: none;
+}
+
+.course-video-list-content a :hover {
+    transition: .4s;
+    background-color: rgb(183, 194, 204)
+}
+
+.course-video-player {
+    width: 100%;
+}
+
+#video-iframe {
+    width: 100%;
+    height: 400px;
+}

@@ -1,0 +1,115 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.4);
+    /* background: none; */
+    padding: .1rem 1rem;
+      
+}
+
+.navbar-brand {
+    margin-left: 4%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-right: 4%;
+}
+
+.nav-link {
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: white;
+    border: 2px solid rgb(240, 166, 30);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 1rem auto;
+    transition: 1s;
+}
+
+/* .nav-link {
+    padding: aut 0px;
+}
+
+.nav-link:hover {
+    color: white;
+} */
+
+.home {
+    height: 650px;
+    width: 100%;
+}
+
+.home-content {
+    background-image: url('../images/home-img.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home-container-content .btn:hover {
+    background: rgb(0, 38, 255);
+}
+
+.home-container-text {
+    margin: 200px auto 100px;
+    color: rgb(241, 248, 247);
+    background: rgba(116, 86, 86, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.home-container-text h2, .home-container-text h3 {
+    font-weight: bold;
+}
+
+.home-container-text h3 {
+    color: rgb(240, 240, 11);
+}
+
+.home-container-content .btn {
+    font-size: 1.5rem;
+    font-weight: 450;
+    padding: .5rem 1.25rem;
+
+}
+
+.footer-socials li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.container .row {
+    color: rgb(192, 170, 170);
+}
+
+/* .container .row p {
+    padding: 4px;
+    background: rgba(250, 250, 250, .9);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: rgb(192, 170, 170);
+} */
+
+.container .row h6 {
+    color: rgb(245, 238, 238);
+}
+
+.container .row p {
+    margin: .25rem;
+    font-size:.9rem;
+}
+
+.container .row p a { 
+    color: rgb(192, 170, 170);
+    padding: 0;
+    margin: .25rem;
+}
+
+.container .row p a:hover {
+    color: white;
+}

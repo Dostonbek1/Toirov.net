@@ -10,8 +10,8 @@
         <link rel="stylesheet" type="text/css" href="../../static/css/home.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/ind_course.css">
     </head>
-    <body onscroll="setHeader()">
-        <div class="super-container" >
+    <body>
+        <div class="super-container">
             <!-- Header -->
             <div w3-include-html="course_header.html"></div>
             <!-- End Header -->
@@ -21,7 +21,7 @@
                 <div class="course-name-content d-flex flex-column align-items-center justify-content-center">
                     <div class="row">
                         <div class="col-md-12 course-name">
-                            <h3 class="text-center mb-0 p-2" style="font-weight: 580">Python Boshlang'ich Kursi</h3>
+                            <h3 class="text-center mb-0 p-2" style="font-weight: 580">Python 3 Basics</h3>
 
                         </div>
                     </div>
@@ -34,47 +34,8 @@
                 <div class="course-main-content row mr-3 ml-3 justify-content-md-center">
                     <div class="course-video-list col-md-4 mt-2 p-0">
                         <div class="course-video-list-content">
-                            <ul class="m-0 p-0 video-list">
-                                <a href="#" id="https://www.youtube.com/embed/jrF-80LjsYA?rel=0" class="link">
-                                    <li>
-                                        <h6>1. Tanishuv</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/lq-1LsCD61c?rel=0">
-                                    <li>
-                                        <h6>2. Python va Pycharmni o'rnatish</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/Lud_AaFTdiQ?rel=0">
-                                    <li>
-                                        <h6>3. Anaconda o'rnatish</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/XccLxzE458I?rel=0">
-                                    <li>
-                                        <h6>4. O'zgaruvchilar</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/VXTTjg6KAQg?rel=0">
-                                    <li>
-                                        <h6>5. Sonlar va Matematik Amallar</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/IaJxJ8TzbHY?rel=0">
-                                    <li>
-                                        <h6>6. Matnlar (Strings)</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/T6zM3tYr9aw?rel=0">
-                                    <li>
-                                        <h6>7. Listlar</h6>
-                                    </li>
-                                </a>
-                                <a href="#" class="link" id="https://www.youtube.com/embed/RNR1bBfyqI0?rel=0">
-                                    <li>
-                                        <h6>8. Tuple</h6>
-                                    </li>
-                                </a>
+                            <ul class="m-0 p-0 video-list" id="video-list">
+                                
                             </ul>
                         </div>
                     </div>
@@ -83,7 +44,7 @@
                         <div class="course-video-player">
                             <div class="course-video-player-content p-0">
                                 <iframe id="video-iframe" allowfullscreen='1'
-                                src="https://www.youtube.com/embed/jrF-80LjsYA?rel=0">
+                                src="https://www.youtube.com/embed/IX6mc9l6tY4?rel=0&autoplay=1?rel=0&autoplay=1">
                                 </iframe>
                             </div>
                         </div>
@@ -104,8 +65,8 @@
                                         <div class="row">
                                             <div class="text-center col-md-3 col-sm-3 col-3">
                                                 <h7 style="font-weight: bold">Author</h7>
-                                                <img src="../../static/images/doston.jpg" width="100px" height="100px" alt="..." class="img-thumbnail mb-2">
-                                                <p>Dostonbek Toirov</p>
+                                                <img src="../../static/images/harrison.jpg" width="100px" height="100px" alt="..." class="img-thumbnail mb-2">
+                                                <p>Harrison Kinsley</p>
                                             </div>
 
                                             <div class="col-md-9 col-sm-9 col-9">
@@ -150,7 +111,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="../../static/js/ind_course.js"></script>
-        <script src="../../static/js/home.js"></script>
 
         <script>
             function includeHTML() {
@@ -182,6 +142,7 @@
             };
 
             includeHTML();
+            
         </script>
     </body>
 </html>

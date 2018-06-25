@@ -2,7 +2,12 @@
     background: rgba(0, 0, 0, 0.4);
     /* background: none; */
     padding: .1rem 0rem;
-      
+    transition: .7s;
+}
+
+.scrolled {
+    background: #11242d;
+    transition: .7s
 }
 
 .navbar-brand {

@@ -23,11 +23,11 @@
 
 .navbar-nav .nav-link:hover {
     color: white;
-    border: 2px solid rgb(240, 166, 30);
+    border: 2px solid rgb(248, 203, 4);
     border-radius: 8px;
     box-sizing: border-box;
     padding: 1rem auto;
-    transition: 1s;
+    transition: .3s;
 }
 
 /* .nav-link {

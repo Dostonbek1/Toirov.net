@@ -13,12 +13,12 @@
 }
 
 .course-video-list {
-    border: 1px solid rgb(150, 137, 137);
-    background-color: rgb(247, 240, 240)
+    border: 1px solid rgb(211, 196, 196);
+    background-color: azure;
 }
 
 .course-video-list-content li {
-    border-bottom: 1px solid rgb(150, 137, 137);
+    border-bottom: 1px solid rgb(211, 196, 196);
     text-decoration: none;
     list-style-type: none;
     padding: 10px 20px;
@@ -36,7 +36,7 @@
 
 .course-video-list-content a :hover {
     transition: .4s;
-    background-color: rgb(183, 194, 204)
+    background-color: rgb(211, 196, 196);
 }
 
 .course-video-player {

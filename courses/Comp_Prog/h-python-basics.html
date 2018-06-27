@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="../../static/css/home.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/ind_course.css">
     </head>
-    <body>
+    <body onscroll="setHeader()">
         <div class="super-container">
             <!-- Header -->
             <div w3-include-html="course_header.html"></div>
@@ -116,27 +116,55 @@
                 6: {name: "6. For Loop", link: "https://www.youtube.com/embed/xtXexPSfcZg?rel=0&autoplay=1"},
                 7: {name: "7. If Statement", link: "https://www.youtube.com/embed/4u2ClNCtcgY?rel=0&autoplay=1"},
                 8: {name: "8. If Else", link: "https://www.youtube.com/embed/qf0sfRZ0hHc?rel=0&autoplay=1"},
-                10: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                11: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                12: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                13: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                14: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                15: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                16: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                17: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                18: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                19: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                20: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                21: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                22: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                23: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                24: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                25: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                26: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                27: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                28: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                29: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
-                
+                9: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
+                10: {name: "10. Functions", link: "https://www.youtube.com/embed/owglNL1KQf0?rel=0&autoplay=1"},
+                11: {name: "11. Function Parameters", link: "https://www.youtube.com/embed/CGRKqnoQGgM?rel=0&autoplay=1"},
+                12: {name: "12. Function Parameter Defaults", link: "https://www.youtube.com/embed/KeRxe9rll2Q?rel=0&autoplay=1"},
+                13: {name: "13. Global and Local Variables", link: "https://www.youtube.com/embed/r9LtArXOYjk?rel=0&autoplay=1"},
+                14: {name: "14. Installing Modules", link: "https://www.youtube.com/embed/UKXx4e9PotI?rel=0&autoplay=1"},
+                15: {name: "15. Common Errors", link: "https://www.youtube.com/embed/AWIgW_F_k50?rel=0&autoplay=1"},
+                16: {name: "16. Writing to File", link: "https://www.youtube.com/embed/f6zeuk5UjuE?rel=0&autoplay=1"},
+                17: {name: "17. Appending Files", link: "https://www.youtube.com/embed/O3KAyaDvM-k?rel=0&autoplay=1"},
+                18: {name: "18. Read from a File", link: "https://www.youtube.com/embed/0SyyGIFnVCA?rel=0&autoplay=1"},
+                19: {name: "19. Classes", link: "https://www.youtube.com/embed/Beu5_JZEWsI?rel=0&autoplay=1"},
+                20: {name: "20. Frequently Asked Questions", link: "https://www.youtube.com/embed/hlxCpeb9pbU?rel=0&autoplay=1"},
+                21: {name: "21. Getting User Input", link: "https://www.youtube.com/embed/ArL54Nmx9oU?rel=0&autoplay=1"},
+                22: {name: "22. Statistics (Mean, Standard Deviation)", link: "https://www.youtube.com/embed/D2U6yg0i-oA?rel=0&autoplay=1"},
+                23: {name: "23. Module Import Syntax", link: "https://www.youtube.com/embed/MZlKCdybZrA?rel=0&autoplay=1"},
+                24: {name: "24. Making Modules", link: "https://www.youtube.com/embed/sKYiQLRe254?rel=0&autoplay=1"},
+                25: {name: "25. Lists and Tuples", link: "https://www.youtube.com/embed/RVXIBZvg-W8?rel=0&autoplay=1"},
+                26: {name: "26. List Manipulation", link: "https://www.youtube.com/embed/LUoKlnK5wcc?rel=0&autoplay=1"},
+                27: {name: "27. Multi-Dimensional List", link: "https://www.youtube.com/embed/Go-FfGhxbSM?rel=0&autoplay=1"},
+                28: {name: "28. Reading From CSV Spreadsheet", link: "https://www.youtube.com/embed/K_oXb04izZM?rel=0&autoplay=1"},
+                29: {name: "29. Try and Except Error Handling", link: "https://www.youtube.com/embed/nqGhjLUhyDc?rel=0&autoplay=1"},
+                30: {name: "30. Multi-line Print", link: "https://www.youtube.com/embed/gINlrLx2zNA?rel=0&autoplay=1"},
+                31: {name: "31. Dictionaries", link: "https://www.youtube.com/embed/YNRc6c0wUA8?rel=0&autoplay=1"},
+                32: {name: "32. Built-in Functions", link: "https://www.youtube.com/embed/7rjJrQy9gi4?rel=0&autoplay=1"},
+                33: {name: "33. OS Module", link: "https://www.youtube.com/embed/wgHeTJtth0w?rel=0&autoplay=1"},
+                34: {name: "34. sys Module", link: "https://www.youtube.com/embed/rLG7Tz6db0w?rel=0&autoplay=1"},
+                35: {name: "35. urllib Module", link: "https://www.youtube.com/embed/5GzVNi0oTxQ?rel=0&autoplay=1"},
+                36: {name: "36. Regular Expressions (Regex)", link: "https://www.youtube.com/embed/sZyAn2TW7GY?rel=0&autoplay=1"},
+                37: {name: "37. Parsing Websites with re and urrlib", link: "https://www.youtube.com/embed/GEshegZzt3M?rel=0&autoplay=1"},
+                38: {name: "38. Tkinter Module Making Windows", link: "https://www.youtube.com/embed/Ccct5D2AyNM?rel=0&autoplay=1"},
+                39: {name: "39. Tkinter Adding Buttons", link: "https://www.youtube.com/embed/QPeS0TI0yNo?rel=0&autoplay=1"},
+                40: {name: "40. Tkinter Event Handling", link: "https://www.youtube.com/embed/4FrQaowzIGo?rel=0&autoplay=1"},
+                41: {name: "41. Tkinter Menu Bar", link: "https://www.youtube.com/embed/Ihlpgw_HYic?rel=0&autoplay=1"},
+                42: {name: "42. Tkinter Adding Images and Text", link: "https://www.youtube.com/embed/a1Y5e-aGPQ4?rel=0&autoplay=1"},
+                43: {name: "43. Threading Module", link: "https://www.youtube.com/embed/NwH0HvMI4EA?rel=0&autoplay=1"},
+                44: {name: "44. Python to exe", link: "https://www.youtube.com/embed/GSoOwSqTSrs?rel=0&autoplay=1"},
+                45: {name: "45. Subprocess Module", link: "https://www.youtube.com/embed/5XU-mAZVv4w?rel=0&autoplay=1"},
+                46: {name: "46. Matplotlib Graphing Intro", link: "https://www.youtube.com/embed/H72jSxkLQHQ?rel=0&autoplay=1"},
+                47: {name: "47. Matplotlib Labels and Titles", link: "https://www.youtube.com/embed/B06l-lGU-0Q?rel=0&autoplay=1"},
+                48: {name: "48. Matplotlib Styles", link: "https://www.youtube.com/embed/sCaGYsEYy-k?rel=0&autoplay=1"},
+                49: {name: "49. Matplotlib Legends", link: "https://www.youtube.com/embed/X4_LraGY_VQ?rel=0&autoplay=1"},
+                50: {name: "50. Scatter Plots and Bar Charts", link: "https://www.youtube.com/embed/MAMu8wawNo8?rel=0&autoplay=1"},
+                51: {name: "51. Matplotlib Plotting from CSV", link: "https://www.youtube.com/embed/MNLmQJtCCZY?rel=0&autoplay=1"},
+                52: {name: "52. FTP Transfers Python", link: "https://www.youtube.com/embed/QVyAeM12wVY?rel=0&autoplay=1"},
+                53: {name: "53. Sockets Intro", link: "https://www.youtube.com/embed/wzrGwor2veQ?rel=0&autoplay=1"},
+                54: {name: "54. Sockets Simple Sort Scanner", link: "https://www.youtube.com/embed/szm3camsf8k?rel=0&autoplay=1"},
+                55: {name: "55. Threaded Port Scanner", link: "https://www.youtube.com/embed/icE6PR19C0Y?rel=0&autoplay=1"},
+                56: {name: "56. Sockets Binding and Scanning", link: "https://www.youtube.com/embed/Q1a12QFq3os?rel=0&autoplay=1"},
+                57: {name: "57. Sockets: Client Server System", link: "https://www.youtube.com/embed/WrtebUkUssc?rel=0&autoplay=1"},
             };
         </script>
         
@@ -145,6 +173,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../../static/js/home.js"></script>
         <script src="../../static/js/ind_course.js"></script>
 
         <script>

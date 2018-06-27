@@ -3,7 +3,7 @@ function setHeader()
         var header = $('.navbar');
 		if(window.innerWidth < 992)
 		{
-			if($(window).scrollTop() > 100)
+			if($(window).scrollTop() > 80)
 			{
 				header.addClass('scrolled');
 			}
@@ -14,7 +14,7 @@ function setHeader()
 		}
 		else
 		{
-			if($(window).scrollTop() > 100)
+			if($(window).scrollTop() > 80)
 			{
 				header.addClass('scrolled');
 			}

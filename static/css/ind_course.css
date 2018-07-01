@@ -1,15 +1,25 @@
 .course-name-section {
-    background-image: url(../images/courses.jpg);
-    background-size: cover;
-    height: 200px;
+    background-color:  rgba(41, 31, 31, 0.9);
+    height: 150px;
+    width: 100%
 }
 
 .course-name {
-    margin: 100px auto;
     font-weight: 500;
-    background: rgb(54, 40, 40, 0.9);
-    border-radius: 10px;
+    /* background: rgb(54, 40, 40, 0.9); */
+    /* border-radius: 10px; */
     color: rgb(247, 243, 8);
+    margin-top: 65px;
+}
+
+.breadcrumb {
+    padding: 0;
+    background-color: inherit;
+    color: white;
+}
+
+.breadcrumb-item a {
+    color: white;
 }
 
 .course-video-list {

@@ -1,3 +1,7 @@
+.navbar {
+    background-color: #11242d;
+}
+
 .course-name-section {
     background-color:  rgba(41, 31, 31, 0.9);
     height: 150px;
@@ -22,10 +26,14 @@
     color: white;
 }
 
+.course-main-section {
+    background-image: url('../../static/images/back.jpg');
+}
+
 .course-video-list {
     border: 1px solid rgb(211, 196, 196);
     background-color: azure;
-    max-height: 690px;
+    max-height: 750px;
     overflow-y: scroll;
 }
 

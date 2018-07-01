@@ -22,10 +22,11 @@
 
 .courses-main {
     width: 100%;
+    background-image:  url('../../static/images/back.jpg');
 }
 
 .courses-section {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .row {
@@ -109,4 +110,7 @@ div.courses-cards a {
     height:140px;
 }
 
+h3 {
+    color:white;
+}
   

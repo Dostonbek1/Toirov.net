@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beruny Academy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../../static/bootstrap-4/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/home.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/ind_course.css">
+    </head>
+    <body onscroll="setHeader()">
+        <div class="super-container">
+            <!-- Header -->
+            <div w3-include-html="course_header.html"></div>
+            <!-- End Header -->
+
+            <!-- Course Name -->
+            <div class="course-name-section">
+                <div class="row" style="width: 100%">
+                    <div class="col-md-8 offset-md-1 course-name">
+                        <h3 class="" style="">Python Intermediate</h3>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../courses.html">Courses</a></li>
+                                <li class="breadcrumb-item active" aria-current="page" style="color:rgb(224, 208, 208)">Python Intermediate</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- End Course Name -->
+
+            <!-- Course Main Section-->
+            <div class="course-main-section pb-2">
+                <div class="course-main-content row mr-3 ml-3 justify-content-md-center">
+                    <div class="course-video-list col-md-4 mt-2 p-0">
+                        <div class="course-video-list-content">
+                            <ul class="m-0 p-0 video-list" id="video-list">
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="course-video-player-section col-md-7 col-xl-6 mt-2">
+                        <div class="course-video-player">
+                            <div class="course-video-player-content p-0">
+                                <iframe id="video-iframe" allowfullscreen='1'
+                                src="https://www.youtube.com/embed/IX6mc9l6tY4?rel=0&autoplay=1">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="course-info">
+                            <div class="course-info-content">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="files-tab" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">Files</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" style="padding:12px;background-color: azure;max-height: 300px;">
+                                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                        <div class="row">
+                                            <div class="text-center col-md-3 col-sm-3 col-3">
+                                                <h7 style="font-weight: bold">Author</h7>
+                                                <img src="../../static/images/harrison.jpg" width="100px" height="100px" alt="..." class="img-thumbnail mb-2">
+                                                <p>Harrison Kinsley</p>
+                                            </div>
+
+                                            <div class="col-md-9 col-sm-9 col-9">
+                                                <h6 style="font-weight: bold">
+                                                    Last updated: 25/05/2018
+                                                </h6>
+                                                <p>
+                                                    What is Lorem Ipsum?
+                                                    
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                                    remaining essentially unchanged. It was popularised in the 1960s with the release
+                                                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="files-tab">
+                                        <div style="">
+                                        This is files
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Footer -->
+            <div w3-include-html="course_footer.html"></div>
+            <!-- End Footer -->
+
+        </div> 
+        <script>
+            // video data array
+            var videos = {
+                1: {name: "1. Installing Python 3", link: "https://www.youtube.com/embed/IX6mc9l6tY4?rel=0&autoplay=1"},
+                2: {name: "2. Print Function and Strings", link: "https://www.youtube.com/embed/UsCQXe1OHZk?rel=0&autoplay=1"},
+                3: {name: "3. Math", link: "https://www.youtube.com/embed/BvgPM9-krOY?rel=0&autoplay=1"},
+                4: {name: "4. Variables", link: "https://www.youtube.com/embed/vKqVnr0BEJQ?rel=0&autoplay=1"},
+                5: {name: "5. While Loop", link: "https://www.youtube.com/embed/jSs58VZVLw8?rel=0&autoplay=1"},
+                6: {name: "6. For Loop", link: "https://www.youtube.com/embed/xtXexPSfcZg?rel=0&autoplay=1"},
+                7: {name: "7. If Statement", link: "https://www.youtube.com/embed/4u2ClNCtcgY?rel=0&autoplay=1"},
+                8: {name: "8. If Else", link: "https://www.youtube.com/embed/qf0sfRZ0hHc?rel=0&autoplay=1"},
+                9: {name: "9. If Elif Else", link: "https://www.youtube.com/embed/42MBMSOZgD4?rel=0&autoplay=1"},
+                10: {name: "10. Functions", link: "https://www.youtube.com/embed/owglNL1KQf0?rel=0&autoplay=1"},
+                11: {name: "11. Function Parameters", link: "https://www.youtube.com/embed/CGRKqnoQGgM?rel=0&autoplay=1"},
+                12: {name: "12. Function Parameter Defaults", link: "https://www.youtube.com/embed/KeRxe9rll2Q?rel=0&autoplay=1"},
+                13: {name: "13. Global and Local Variables", link: "https://www.youtube.com/embed/r9LtArXOYjk?rel=0&autoplay=1"},
+                14: {name: "14. Installing Modules", link: "https://www.youtube.com/embed/UKXx4e9PotI?rel=0&autoplay=1"},
+                15: {name: "15. Common Errors", link: "https://www.youtube.com/embed/AWIgW_F_k50?rel=0&autoplay=1"},
+                16: {name: "16. Writing to File", link: "https://www.youtube.com/embed/f6zeuk5UjuE?rel=0&autoplay=1"},
+                17: {name: "17. Appending Files", link: "https://www.youtube.com/embed/O3KAyaDvM-k?rel=0&autoplay=1"},
+                18: {name: "18. Read from a File", link: "https://www.youtube.com/embed/0SyyGIFnVCA?rel=0&autoplay=1"},
+                19: {name: "19. Classes", link: "https://www.youtube.com/embed/Beu5_JZEWsI?rel=0&autoplay=1"},
+                20: {name: "20. Frequently Asked Questions", link: "https://www.youtube.com/embed/hlxCpeb9pbU?rel=0&autoplay=1"},
+                21: {name: "21. Getting User Input", link: "https://www.youtube.com/embed/ArL54Nmx9oU?rel=0&autoplay=1"},
+                22: {name: "22. Statistics (Mean, Standard Deviation)", link: "https://www.youtube.com/embed/D2U6yg0i-oA?rel=0&autoplay=1"},
+                23: {name: "23. Module Import Syntax", link: "https://www.youtube.com/embed/MZlKCdybZrA?rel=0&autoplay=1"},
+                24: {name: "24. Making Modules", link: "https://www.youtube.com/embed/sKYiQLRe254?rel=0&autoplay=1"},
+                25: {name: "25. Lists and Tuples", link: "https://www.youtube.com/embed/RVXIBZvg-W8?rel=0&autoplay=1"},
+                26: {name: "26. List Manipulation", link: "https://www.youtube.com/embed/LUoKlnK5wcc?rel=0&autoplay=1"},
+                27: {name: "27. Multi-Dimensional List", link: "https://www.youtube.com/embed/Go-FfGhxbSM?rel=0&autoplay=1"},
+                28: {name: "28. Reading From CSV Spreadsheet", link: "https://www.youtube.com/embed/K_oXb04izZM?rel=0&autoplay=1"},
+                29: {name: "29. Try and Except Error Handling", link: "https://www.youtube.com/embed/nqGhjLUhyDc?rel=0&autoplay=1"},
+                30: {name: "30. Multi-line Print", link: "https://www.youtube.com/embed/gINlrLx2zNA?rel=0&autoplay=1"},
+                31: {name: "31. Dictionaries", link: "https://www.youtube.com/embed/YNRc6c0wUA8?rel=0&autoplay=1"},
+                32: {name: "32. Built-in Functions", link: "https://www.youtube.com/embed/7rjJrQy9gi4?rel=0&autoplay=1"},
+                33: {name: "33. OS Module", link: "https://www.youtube.com/embed/wgHeTJtth0w?rel=0&autoplay=1"},
+                34: {name: "34. sys Module", link: "https://www.youtube.com/embed/rLG7Tz6db0w?rel=0&autoplay=1"},
+                35: {name: "35. urllib Module", link: "https://www.youtube.com/embed/5GzVNi0oTxQ?rel=0&autoplay=1"},
+                36: {name: "36. Regular Expressions (Regex)", link: "https://www.youtube.com/embed/sZyAn2TW7GY?rel=0&autoplay=1"},
+                37: {name: "37. Parsing Websites with re and urrlib", link: "https://www.youtube.com/embed/GEshegZzt3M?rel=0&autoplay=1"},
+                38: {name: "38. Tkinter Module Making Windows", link: "https://www.youtube.com/embed/Ccct5D2AyNM?rel=0&autoplay=1"},
+                39: {name: "39. Tkinter Adding Buttons", link: "https://www.youtube.com/embed/QPeS0TI0yNo?rel=0&autoplay=1"},
+                40: {name: "40. Tkinter Event Handling", link: "https://www.youtube.com/embed/4FrQaowzIGo?rel=0&autoplay=1"},
+                41: {name: "41. Tkinter Menu Bar", link: "https://www.youtube.com/embed/Ihlpgw_HYic?rel=0&autoplay=1"},
+                42: {name: "42. Tkinter Adding Images and Text", link: "https://www.youtube.com/embed/a1Y5e-aGPQ4?rel=0&autoplay=1"},
+                43: {name: "43. Threading Module", link: "https://www.youtube.com/embed/NwH0HvMI4EA?rel=0&autoplay=1"},
+                44: {name: "44. Python to exe", link: "https://www.youtube.com/embed/GSoOwSqTSrs?rel=0&autoplay=1"},
+                45: {name: "45. Subprocess Module", link: "https://www.youtube.com/embed/5XU-mAZVv4w?rel=0&autoplay=1"},
+                46: {name: "46. Matplotlib Graphing Intro", link: "https://www.youtube.com/embed/H72jSxkLQHQ?rel=0&autoplay=1"},
+                47: {name: "47. Matplotlib Labels and Titles", link: "https://www.youtube.com/embed/B06l-lGU-0Q?rel=0&autoplay=1"},
+                48: {name: "48. Matplotlib Styles", link: "https://www.youtube.com/embed/sCaGYsEYy-k?rel=0&autoplay=1"},
+                49: {name: "49. Matplotlib Legends", link: "https://www.youtube.com/embed/X4_LraGY_VQ?rel=0&autoplay=1"},
+                50: {name: "50. Scatter Plots and Bar Charts", link: "https://www.youtube.com/embed/MAMu8wawNo8?rel=0&autoplay=1"},
+                51: {name: "51. Matplotlib Plotting from CSV", link: "https://www.youtube.com/embed/MNLmQJtCCZY?rel=0&autoplay=1"},
+                52: {name: "52. FTP Transfers Python", link: "https://www.youtube.com/embed/QVyAeM12wVY?rel=0&autoplay=1"},
+                53: {name: "53. Sockets Intro", link: "https://www.youtube.com/embed/wzrGwor2veQ?rel=0&autoplay=1"},
+                54: {name: "54. Sockets Simple Sort Scanner", link: "https://www.youtube.com/embed/szm3camsf8k?rel=0&autoplay=1"},
+                55: {name: "55. Threaded Port Scanner", link: "https://www.youtube.com/embed/icE6PR19C0Y?rel=0&autoplay=1"},
+                56: {name: "56. Sockets Binding and Scanning", link: "https://www.youtube.com/embed/Q1a12QFq3os?rel=0&autoplay=1"},
+                57: {name: "57. Sockets: Client Server System", link: "https://www.youtube.com/embed/WrtebUkUssc?rel=0&autoplay=1"},
+            };
+        </script>
+        
+
+        <script src="../../static/bootstrap-4/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../../static/js/home.js"></script>
+        <script src="../../static/js/ind_course.js"></script>
+
+        <script>
+            function includeHTML() {
+                var z, i, elmnt, file, xhttp;
+                /*loop through a collection of all HTML elements:*/
+                z = document.getElementsByTagName("*");
+                for (i = 0; i < z.length; i++) {
+                    elmnt = z[i];
+                    /*search for elements with a certain atrribute:*/
+                    file = elmnt.getAttribute("w3-include-html");
+                    if (file) {
+                        /*make an HTTP request using the attribute value as the file name:*/
+                        xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                        }      
+                        xhttp.open("GET", file, true);
+                        xhttp.send();
+                        /*exit the function:*/
+                        return;
+                    }
+                }
+            };
+
+            includeHTML();
+            
+        </script>
+    </body>
+</html>

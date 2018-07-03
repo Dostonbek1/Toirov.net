@@ -21,8 +21,9 @@
 }
 
 .courses-main {
-    width: 100%;
+    max-width: 1300px;
     background-image:  url('../../static/images/back.jpg');
+    margin: auto;
 }
 
 .courses-section {

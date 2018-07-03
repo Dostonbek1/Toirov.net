@@ -30,6 +30,11 @@
     background-image: url('../../static/images/back.jpg');
 }
 
+.course-main-content {
+    max-width: 1300px;
+    margin: auto;
+}
+
 .course-video-list {
     border: 1px solid rgb(211, 196, 196);
     background-color: azure;

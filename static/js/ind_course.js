@@ -23,7 +23,6 @@ window.onload=function(){
     console.log(links)
     for (var i=0; i<links.length; i++) {
         links[i].onclick = handler;
-        console.log(links[i]);
     }
 
     function handler(e) {
@@ -35,3 +34,13 @@ window.onload=function(){
     }   
 
 };
+
+// stopping audio that is being played when the other one is started
+$('audio').bind('play', function() {
+    activated = this;
+    $('audio').each(function() {
+        if(this != activated) {
+            this.pause();
+        }
+    });
+  });

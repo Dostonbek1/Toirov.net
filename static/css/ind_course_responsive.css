@@ -152,6 +152,12 @@
         font-size: 20px;
         padding-left: 20px;
     }
+
+    .tab-pane audio {
+        padding: 10px 12px;
+        border-bottom: 2px dashed rgb(211, 196, 196);
+        width: 100%;
+    }
 }
 
 /************

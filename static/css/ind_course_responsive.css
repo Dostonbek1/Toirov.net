@@ -214,4 +214,8 @@
     .course-name-section {
         height: 120px;
     }
+
+    .tab-pane audio {
+        padding: 0px;
+    }
 }

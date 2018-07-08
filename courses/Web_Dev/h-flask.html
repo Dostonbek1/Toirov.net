@@ -50,7 +50,7 @@
                         <div class="course-video-player">
                             <div class="course-video-player-content p-0">
                                 <iframe id="video-iframe" allowfullscreen='1'
-                                src="https://www.youtube.com/embed/FNQxxpM1yOs?rel=0&autoplay=1">
+                                src="https://www.youtube.com/embed/Lv1fv-HmkQo?rel=0&autoplay=1">
                                 </iframe>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
 
                                             <div class="col-md-9 col-sm-9 col-9">
                                                 <h6 style="font-weight: bold">
-                                                    Last updated: 16/02/2016
+                                                    Last updated: 19/02/2016
                                                 </h6>
                                                 <p>
                                                     Flask is Python web framework used for building web applications.<br><br>
@@ -112,18 +112,41 @@
         <script>
             // video data array
             var videos = {
-                1: {name: "1. Introduction", link: "https://www.youtube.com/embed/FNQxxpM1yOs?rel=0&autoplay=1"},
-                2: {name: "2. Creating App", link: "https://www.youtube.com/embed/iZ5my3krEVM?rel=0&autoplay=1"},
-                3: {name: "3. Jinja Templating", link: "https://www.youtube.com/embed/3tf8XlhsQAo?rel=0&autoplay=1"},
-                4: {name: "4. Bootstrap HTML CSS", link: "https://www.youtube.com/embed/p8qpu9WscFU?rel=0&autoplay=1"},
-                5: {name: "5. Passing Variables from Python to HTML", link: "https://www.youtube.com/embed/nWRboXrcipU?rel=0&autoplay=1"},
-                6: {name: "6. Beginning Blog", link: "https://www.youtube.com/embed/uI2KW8K_eks?rel=0&autoplay=1"},
-                7: {name: "7. Blog View and Template", link: "https://www.youtube.com/embed/uGsmuCjZBSU?rel=0&autoplay=1"},
-                8: {name: "8. Database and Migrations", link: "https://www.youtube.com/embed/hU5QSQt6yQc?rel=0&autoplay=1"},
-                9: {name: "9. Admin", link: "https://www.youtube.com/embed/xVAbW1G64bM?rel=0&autoplay=1"},
-                10: {name: "10. Individual Blog Pages", link: "https://www.youtube.com/embed/W66TcJ7i-Bk?rel=0&autoplay=1"},
-                11: {name: "11. Publishing to a Web Server", link: "https://www.youtube.com/embed/Y-CT_l1dnVU?rel=0&autoplay=1"},
-                12: {name: "12. SSL for HTTPS with nginx ", link: "https://www.youtube.com/embed/z0L3u2Vn3Wo?rel=0&autoplay=1"},
+                1: {name: "1. Introduction", link: "https://www.youtube.com/embed/Lv1fv-HmkQo?rel=0&autoplay=1"},
+                2: {name: "2. Basic Site Setup", link: "https://www.youtube.com/embed/qZNL4Ku1UQg?rel=0&autoplay=1"},
+                3: {name: "3. Bootstrap and Jinja Templates", link: "https://www.youtube.com/embed/8aTgOs_cv2g?rel=0&autoplay=1"},
+                4: {name: "4. Starting the Homepage", link: "https://www.youtube.com/embed/C30xMkLNoUI?rel=0&autoplay=1"},
+                5: {name: "5. Homepage Improvements", link: "https://www.youtube.com/embed/AvIBdDI7h5A?rel=0&autoplay=1"},
+                6: {name: "6. Finishing Homepage", link: "https://www.youtube.com/embed/hLR71ZJBUFU?rel=0&autoplay=1"},
+                7: {name: "7. Dynamic Dashboard", link: "https://www.youtube.com/embed/FmfpMLoRjWU?rel=0&autoplay=1"},
+                8: {name: "8. Content Management", link: "https://www.youtube.com/embed/Lr4gGYDXsRo?rel=0&autoplay=1"},
+                9: {name: "9. Error Handling", link: "https://www.youtube.com/embed/tyfwwSNc9Jg?rel=0&autoplay=1"},
+                10: {name: "10. Message Flashing", link: "https://www.youtube.com/embed/rjIuZbG9190?rel=0&autoplay=1"},
+                11: {name: "11. User System", link: "https://www.youtube.com/embed/X7ajyTwV2UM?rel=0&autoplay=1"},
+                12: {name: "12. GET & POST", link: "https://www.youtube.com/embed/lUCmVNGs5gw?rel=0&autoplay=1"},
+                13: {name: "13. MySQL Database", link: "https://www.youtube.com/embed/T5eJeCoprCA?rel=0&autoplay=1"},
+                14: {name: "14. Connecting to Database", link: "https://www.youtube.com/embed/T-Sc-uq4n5c?rel=0&autoplay=1"},
+                15: {name: "15. User Registration", link: "https://www.youtube.com/embed/ItzVQGht-Es?rel=0&autoplay=1"},
+                16: {name: "16. User Registration - 2", link: "https://www.youtube.com/embed/PiphizBQJho?rel=0&autoplay=1"},
+                17: {name: "17. User Registratino - 3", link: "https://www.youtube.com/embed/qgcTxy9Ujfs?rel=0&autoplay=1"},
+                18: {name: "18. Password Hashing with Passlib", link: "https://www.youtube.com/embed/UtF58KqcHWU?rel=0&autoplay=1"},
+                19: {name: "19. User Login System", link: "https://www.youtube.com/embed/n2hLIfLHhOk?rel=0&autoplay=1"},
+                20: {name: "20. Login Required Decorator", link: "https://www.youtube.com/embed/CD5lFKyH9Ls?rel=0&autoplay=1"},
+                21: {name: "21. Dynamic User Content", link: "https://www.youtube.com/embed/_Q0aXXzYjCc?rel=0&autoplay=1"},
+                22: {name: "22. Content Management System", link: "https://www.youtube.com/embed/xdstIR3prSk?rel=0&autoplay=1"},
+                23: {name: "23. More CMS", link: "https://www.youtube.com/embed/e_f84FeBNXM?rel=0&autoplay=1"},
+                24: {name: "24. Crontab / Cron Jobs", link: "https://www.youtube.com/embed/p3PcNuB20v4?rel=0&autoplay=1"},
+                25: {name: "25. Conclusion", link: "https://www.youtube.com/embed/HH4Jw7ACmvQ?rel=0&autoplay=1"},
+                26: {name: "26. Includes", link: "https://www.youtube.com/embed/ggRZuOiFPg0?rel=0&autoplay=1"},
+                27: {name: "27. Jinja Templating Continued", link: "https://www.youtube.com/embed/WgdrhstgSuw?rel=0&autoplay=1"},
+                28: {name: "28. URL Converters", link: "https://www.youtube.com/embed/iQ6YdBiLxOI?rel=0&autoplay=1"},
+                29: {name: "29. Flask Mail", link: "https://www.youtube.com/embed/4WbrHS_H8ks?rel=0&autoplay=1"},
+                30: {name: "30. Return Files with send_file", link: "https://www.youtube.com/embed/WICXiCtXX5U?rel=0&autoplay=1"},
+                31: {name: "31. Protected Directories and Files", link: "https://www.youtube.com/embed/t5Midcpq-m8?rel=0&autoplay=1"},
+                32: {name: "32. Jquery with Flask", link: "https://www.youtube.com/embed/vtiiO5I90Tc?rel=0&autoplay=1"},
+                33: {name: "33. PyGal SVG Embedded Graphs", link: "https://www.youtube.com/embed/BIttXQO0bXw?rel=0&autoplay=1"},
+                34: {name: "34. Integrating PayPal with Flask", link: "https://www.youtube.com/embed/HIwRzATH6iU?rel=0&autoplay=1"},
+                35: {name: "35. SSL for HTTPS with Apache Server", link: "https://www.youtube.com/embed/2iXfGn1Ur6U?rel=0&autoplay=1"},
                 
             };
         </script>

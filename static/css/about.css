@@ -1,0 +1,79 @@
+.about-head {
+    height: 255px;
+    width: 100%
+}
+
+.about-head-content {
+    background-image: url(../images/library.jpg);
+    background-size: cover;
+}
+
+.home-container-text {
+    margin: 100px auto 100px;
+    color: rgb(238, 255, 5);
+    background: rgba(116, 86, 86, 0.9);
+    padding: .6rem 2rem;
+    border-radius: 10px;
+}
+
+.home-container-text h2 {
+    margin: auto;
+}
+
+.team-main-content {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.team-section {
+    padding-bottom: 10px;
+}
+
+.mission-section-content {
+    text-align: center;
+    border: 2px dashed rgb(211, 196, 196);
+    margin: 20px auto 30px;
+}
+
+.mission-section-content h3 {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.mission-section-content p {
+    font-style: italic;
+    font-size:18px;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-md-2 {
+    padding: 0;
+    box-shadow: 3px 5px 8px;
+    font-size: 15px;
+}
+
+.col-md-2 p {
+    margin-bottom: .1rem;
+    text-align: center;
+}
+
+.team-cards .card {
+    position: relative;
+    border: 0;
+}
+
+.card .card-img-top {
+    border-radius: 50%;
+}
+
+.card .card-body .member-name {
+    font-weight: 700;
+}
+
+.card .card-body .member-info {
+    font-style: italic;
+    font-size: 14px;
+}

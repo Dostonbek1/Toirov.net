@@ -1,0 +1,26 @@
+.form-group input, .form-group textarea {
+    border-radius: 15px;
+}
+
+.contact-area {
+    background-color:rgb(238,238,238, 0.3);
+    border-radius:15px;
+    padding:20px;
+    width:80%; 
+    margin:70px auto 30px;
+
+}
+
+label {
+    color: black
+}
+
+body {
+    background-image: url('../images/back.jpg');
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}

@@ -20,6 +20,10 @@
     margin: auto;
 }
 
+.team-card-section {
+    background-image: url(../images/back.jpg)
+}
+
 .team-main-content {
     max-width: 1300px;
     margin: auto;
@@ -33,6 +37,7 @@
     text-align: center;
     border: 2px dashed rgb(211, 196, 196);
     margin: 20px auto 30px;
+    color:white;
 }
 
 .mission-section-content h3 {
@@ -63,6 +68,9 @@
 .team-cards .card {
     position: relative;
     border: 0;
+    padding: 10px;
+    background-color: rgb(255,255,255,0.4);
+    color: rgb(46, 34, 34);
 }
 
 .card .card-img-top {

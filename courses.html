@@ -47,7 +47,13 @@
                                 <div class="courses-cards row justify-content-md-center row-eq-height">
                                     <a href="courses/Lear_Eng/u-eng-beginner.html" class="card col-md-2 col-sm-3 m-3">
                                         <span class="badge badge-success narx">Bepul</span>
-                                        <img class="card-img-top" src="static/images/home-img.jpeg" alt="Card image cap">
+                                        <picture>
+                                            <source srcset="static/images/beginner.jpg" media="(max-width: 300px)">
+                                            <source srcset="static/images/beginner-long.jpg" media="(min-width: 301px)">
+                                            <source srcset="static/images/beginner.jpg" media="(max-width: 575px)">
+                                            <img class="card-img-top" src="static/images/home-img.jpeg" alt="Beginner">
+                                        </picture>
+                                        
                                         <div class="card-body">
                                             <h6 class="card-title">Beginner</h6>
                                             <p class="card-text">Author: Umidjon Sobirov</p>

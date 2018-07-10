@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <title>Beruny Academy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../static/bootstrap-4/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/home.css">
+        <link href='../static/css/contact.css' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" type="text/css" href="static/css/courses.css"> -->
+    </head>
+    <body onscroll="setHeader()">
+
+        <div class="super-container">
+            <!-- Header -->
+            <div w3-include-html="header.html"></div>
+            <!-- End Header -->
+
+            <!-- <div class="container"> -->
+
+                <div class="row contact-area justify-content-center">
+    
+                    <div class="col-lg-8 col-lg-offset-2" style="color: yellow">
+    
+                        <h1 align="center">Contact Us</h1><br>
+    
+                        <form id="contact-form" method="post" action="../static/contact.php" role="form" data-toggle="validator">
+    
+                            <div class="messages" style="color: black;"></div>
+                        
+                            <div class="controls">
+                        
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Ism *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Xat *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for us" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted"><strong>*</strong> To'ldirish majburiy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </form>
+    
+                    </div>
+    
+                </div>
+            
+            </div>
+
+            <!-- Footer -->
+            <div w3-include-html="footer.html"></div>
+            <!-- End Footer -->
+
+        </div> 
+
+        <script src="../static/bootstrap-4/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../static/js/home.js"></script>
+        <script src="../validator.js"></script>
+        <script src="../static/contact.php"></script>
+
+        <script>
+            function includeHTML() {
+                var z, i, elmnt, file, xhttp;
+                /*loop through a collection of all HTML elements:*/
+                z = document.getElementsByTagName("*");
+                for (i = 0; i < z.length; i++) {
+                    elmnt = z[i];
+                    /*search for elements with a certain atrribute:*/
+                    file = elmnt.getAttribute("w3-include-html");
+                    if (file) {
+                        /*make an HTTP request using the attribute value as the file name:*/
+                        xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                        }      
+                        xhttp.open("GET", file, true);
+                        xhttp.send();
+                        /*exit the function:*/
+                        return;
+                    }
+                }
+            };
+
+            includeHTML();
+        </script>
+    </body>
+</html>

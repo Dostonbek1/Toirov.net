@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../static/css/home.css">
         <link rel="stylesheet" type="text/css" href="../static/css/courses.css">
+
     </head>
     <body onscroll="setHeader()">
         <div class="super-container">
@@ -27,13 +28,41 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <!-- End Home Image -->
+            <div class="row categories">
+                <div class="col-lg-4 col-md-4 col-sm-4 cat">
+                    <a href="#english" class="cat-center">
+                        <div class="cat-li">
+                            <i class="fa fa-language" aria-hidden="true">  Ingliz tili</i>
+                        </div>
+                    </a>
+                </div>
 
+                <div class="col-lg-4 col-md-4 col-sm-4 cat ">
+                    <a href="#web" class="cat-center">
+                        <div class="cat-li">
+                            <i class="fa fa-linode" aria-hidden="true">  Veb-sayt</i>
+                        </div>
+                    </a> 
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 cat">
+                    <a href="#soft" class="cat-center">
+                        <div class="cat-li">
+                            <i class="fa fa-terminal" aria-hidden="true">  Dasturlash</i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                
+            
             <!-- Courses Main -->
             <div class="courses-main">
                 <div class="courses-main-content">
-                    <div class="courses-section">
+                    <div class="courses-section" id="english">
                         <div class="courses-section-content">
                             <div class="row">
                                 <div class="col text-center mt-3 mb-1">
@@ -150,7 +179,7 @@
                         </div>
                     </div>
 
-                    <div class="courses-section">                        
+                    <div class="courses-section" id="web">                        
                         <div class="courses-section-content">
                             <div class="row">
                                 <div class="col text-center mt-3 mb-1">
@@ -230,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="courses-section">
+                    <div class="courses-section" id="soft">
                         <div class="courses-section-content">
                             <div class="row">
                                 <div class="col text-center mt-3 mb-1">
@@ -344,7 +373,12 @@
                 }
             };
 
+
+            
             includeHTML();
         </script>
+
+        
     </body>
+    
 </html>

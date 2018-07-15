@@ -1,3 +1,9 @@
+/* This is for webhost ad. This makes it small, or invisible */
+img {
+    width: 1%;
+}
+/* --- */
+
 body {
     min-width: 100%;
 }

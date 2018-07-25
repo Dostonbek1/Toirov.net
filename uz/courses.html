@@ -35,11 +35,17 @@
             <!-- End Home Image -->
             <div class="row" style="background-color: rgb(235, 235, 235)">
                 <div class="col-sm-3">
-                    <a href="#">
+                    <a href="#english">
                         <div class="containerCat">
-                            <img src="../static/images/lang.jpg" alt="" style="margin: 20px 0 20px 0;">
-                            <div class="top-left">
-                                <h2>
+                            <picture>
+                                <source srcset="../static/images/lang.jpg" media="(max-width: 575px)">
+                                <source srcset="../static/images/lang-small.jpg" media="(max-width: 1300px)">
+                                <source srcset="../static/images/lang.jpg" media="(min-width: 1301px)">
+                                <img src="../static/images/lang.jpg" alt="" style="margin: 10px 0 10px 0;">
+                            </picture>
+                            
+                            <div class="centered">
+                                <h2 class="cat-il" style="padding: 8px; opacity: 1; background-color: rgba(114, 114, 114, 0.603)">
                                     Ingliz Tili
                                 </h2>
                             </div>
@@ -47,11 +53,17 @@
                     </a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#">
+                    <a href="#web">
                         <div class="containerCat">
-                            <img src="../static/images/www.jpg" alt="" style="margin: 20px 0 20px 0;">
-                            <div class="top-left">
-                                <h2>
+                            <picture>
+                                <source srcset="../static/images/www.jpg" media="(max-width: 575px)">
+                                <source srcset="../static/images/www-small.jpg" media="(max-width: 1300px)">
+                                <source srcset="../static/images/www.jpg" media="(min-width: 1301px)">
+                                <img src="../static/images/www.jpg" alt="" style="margin: 10px 0 10px 0;">
+                            </picture>
+
+                            <div class="centered">
+                                <h2 class="cat-il">
                                     Veb-Sayt
                                 </h2>
                             </div>
@@ -59,23 +71,35 @@
                     </a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#">
+                    <a href="#soft">
                         <div class="containerCat">
-                            <img src="../static/images/programming.jpg" alt="" style="padding: 20px 0 20px 0;">
-                            <div class="top-left">
-                                <h2>
+                            <picture>
+                                <source srcset="../static/images/programming.jpg" media="(max-width: 575px)">
+                                <source srcset="../static/images/programming-small.jpg" media="(max-width: 1300px)">
+                                <source srcset="../static/images/programming.jpg" media="(min-width: 1301px)">
+                                <img src="../static/images/programming.jpg" alt="" style="margin: 10px 0 10px 0;">
+                            </picture>
+                                                       
+
+                            <div class="centered">
+                                <h2 class="cat-il">
                                     Dasturlash
                                 </h2>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-3">
-                    <a href="#">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <a href="#tg">
                         <div class="containerCat">
-                            <img src="../static/images/tg.jpg" alt="" style="padding: 20px 0 20px 0;">
-                            <div class="top-left">
-                                <h2>
+                            <picture>
+                                <source srcset="../static/images/tg.jpg" media="(max-width: 575px)">
+                                <source srcset="../static/images/tg-small.jpg" media="(max-width: 1300px)">
+                                <source srcset="../static/images/tg.jpg" media="(min-width: 1301px)">
+                                <img src="../static/images/tg.jpg" alt="" style="margin: 10px 0 10px 0;">
+                            </picture>
+                            <div class="centered">
+                                <h2 class="cat-il" style="padding: 8px; opacity: 1; background-color: rgba(114, 114, 114, 0.603)">
                                     Telegramda
                                 </h2>
                             </div>
@@ -355,7 +379,7 @@
                         </div>
                     </div>
 
-                    <div class="courses-section">
+                    <div class="courses-section" id="tg">
                         <div class="courses-section-content">
                             <div class="row">
                                 <div class="col text-center mt-3 mb-1">

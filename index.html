@@ -19,10 +19,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div id="top-bar">
+        <div style="margin: auto 1rem;display: block">
+            <img src="src/images/logo.png" style="width:100px;height:50px;display:inline-block;margin:5px 10px;" />
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div class="container-fluid">
 
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin-right:3rem">
                 <i class="fas fa-align-left"></i>
                 <span></span>
             </button>
@@ -31,18 +36,18 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HTML</a>
+                        <a class="navbar-link" href="#">HTML</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CSS</a>
+                        <a class="navbar-link" href="#">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">JS</a>
+                        <a class="navbar-link" href="#">JS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PHP</a>
+                        <a class="navbar-link" href="#">PHP</a>
                     </li>
                 </ul>
             </div>
@@ -52,37 +57,90 @@
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
+            <h5 style="padding: 15px 15px 10px;">HTML Darsliklar</h5>
             <ul class="nav nav-tabs list-unstyled components" role="tablist" style="display: inline;">
                 <li class="nav-item">
-                    <a class="nav-link active" id="html-1-tab" data-toggle="tab" href="#html-1" role="tab" aria-controls="html-1" aria-selected="true">HTML 1</a>
+                    <a class="side-tab active" id="html-1-tab" data-toggle="tab" href="#html-1" role="tab" aria-controls="html-1" aria-selected="true">HTML Kirish</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-2-tab" data-toggle="tab" href="#html-2" role="tab" aria-controls="html-2" aria-selected="false">HTML 2</a>
+                    <a class="side-tab" id="html-2-tab" data-toggle="tab" href="#html-2" role="tab" aria-controls="html-2" aria-selected="false">HTML Asoslar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-3-tab" data-toggle="tab" href="#html-3" role="tab" aria-controls="html-3" aria-selected="false">HTML 3</a>
+                    <a class="side-tab" id="html-3-tab" data-toggle="tab" href="#html-3" role="tab" aria-controls="html-3" aria-selected="false">HTML Elementlar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-4-tab" data-toggle="tab" href="#html-4" role="tab" aria-controls="html-4" aria-selected="false">HTML 4</a>
+                    <a class="side-tab" id="html-4-tab" data-toggle="tab" href="#html-4" role="tab" aria-controls="html-4" aria-selected="false">HTML Attribute</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-5-tab" data-toggle="tab" href="#html-5" role="tab" aria-controls="html-5" aria-selected="false">HTML 5</a>
+                    <a class="side-tab" id="html-5-tab" data-toggle="tab" href="#html-5" role="tab" aria-controls="html-5" aria-selected="false">HTML Sarlavha</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-6-tab" data-toggle="tab" href="#html-6" role="tab" aria-controls="html-6" aria-selected="false">HTML 6</a>
+                    <a class="side-tab" id="html-6-tab" data-toggle="tab" href="#html-6" role="tab" aria-controls="html-6" aria-selected="false">HTML Paragraf</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-7-tab" data-toggle="tab" href="#html-7" role="tab" aria-controls="html-7" aria-selected="false">HTML 7</a>
+                    <a class="side-tab" id="html-7-tab" data-toggle="tab" href="#html-7" role="tab" aria-controls="html-7" aria-selected="false">HTML Uslublar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-8-tab" data-toggle="tab" href="#html-8" role="tab" aria-controls="html-8" aria-selected="false">HTML 8</a>
+                    <a class="side-tab" id="html-8-tab" data-toggle="tab" href="#html-8" role="tab" aria-controls="html-8" aria-selected="false">HTML Formatlash</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-9-tab" data-toggle="tab" href="#html-9" role="tab" aria-controls="html-9" aria-selected="false">HTML 9</a>
+                    <a class="side-tab" id="html-9-tab" data-toggle="tab" href="#html-9" role="tab" aria-controls="html-9" aria-selected="false">HTML Sitatalar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="html-10-tab" data-toggle="tab" href="#html-10" role="tab" aria-controls="html-10" aria-selected="false">HTML 10</a>
+                    <a class="side-tab" id="html-10-tab" data-toggle="tab" href="#html-10" role="tab" aria-controls="html-10" aria-selected="false">HTML Izohlar</a>
                 </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-11-tab" data-toggle="tab" href="#html-11" role="tab" aria-controls="html-11" aria-selected="false">HTML Ranglar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-12-tab" data-toggle="tab" href="#html-12" role="tab" aria-controls="html-12" aria-selected="false">HTML CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-13-tab" data-toggle="tab" href="#html-13" role="tab" aria-controls="html-13" aria-selected="false">HTML Ilovalar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-14-tab" data-toggle="tab" href="#html-14" role="tab" aria-controls="html-14" aria-selected="false">HTML Rasmlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-15-tab" data-toggle="tab" href="#html-15" role="tab" aria-controls="html-15" aria-selected="false">HTML Jadvallar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-16-tab" data-toggle="tab" href="#html-16" role="tab" aria-controls="html-16" aria-selected="false">HTML Ro'yxatlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-17-tab" data-toggle="tab" href="#html-17" role="tab" aria-controls="html-17" aria-selected="false">HTML Bloklar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-18-tab" data-toggle="tab" href="#html-18" role="tab" aria-controls="html-18" aria-selected="false">HTML Classlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-19-tab" data-toggle="tab" href="#html-19" role="tab" aria-controls="html-19" aria-selected="false">HTML Id</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-20-tab" data-toggle="tab" href="#html-20" role="tab" aria-controls="html-20" aria-selected="false">HTML Iframe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-21-tab" data-toggle="tab" href="#html-21" role="tab" aria-controls="html-21" aria-selected="false">HTML JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-22-tab" data-toggle="tab" href="#html-22" role="tab" aria-controls="html-22" aria-selected="false">HTML Fayl Manzili</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-23-tab" data-toggle="tab" href="#html-22" role="tab" aria-controls="html-23" aria-selected="false">HTML Bosh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-24-tab" data-toggle="tab" href="#html-23" role="tab" aria-controls="html-24" aria-selected="false">HTML Tartibi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-25-tab" data-toggle="tab" href="#html-24" role="tab" aria-controls="html-25" aria-selected="false">HTML Moslashuvchan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-26-tab" data-toggle="tab" href="#html-25" role="tab" aria-controls="html-26" aria-selected="false">HTML Komyuter Kodi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-27-tab" data-toggle="tab" href="#html-26" role="tab" aria-controls="html-27" aria-selected="false">HTML Belgilar</a>
+                </li>
+                
             </ul>
         </nav>
 
@@ -90,34 +148,94 @@
         <div id="content">
             <div class="tab-content " style="padding:10px;background-color: white; font-size:16px;">
                 <div class="tab-pane fade show active" id="html-1" role="tabpanel" aria-labelledby="html-1-tab">
-                    Les 1
+                    <h4>HTML Kirish</h4>
                 </div>
                 <div class="tab-pane fade" id="html-2" role="tabpanel" aria-labelledby="html-2-tab">
-                    Les 2
+                    <h4>HTML Asoslari</h4>
                 </div>
                 <div class="tab-pane fade" id="html-3" role="tabpanel" aria-labelledby="html-3-tab">
-                    Les 3
+                    <h4>HTML Elementlar</h4>
                 </div>
                 <div class="tab-pane fade" id="html-4" role="tabpanel" aria-labelledby="html-4-tab">
-                    Les 4
+                    <h4>HTML Attribute</h4>
                 </div>
                 <div class="tab-pane fade" id="html-5" role="tabpanel" aria-labelledby="html-5-tab">
-                    Les 5
+                    <h4>HTML Sarlavha</h4>
                 </div>
                 <div class="tab-pane fade" id="html-6" role="tabpanel" aria-labelledby="html-6-tab">
-                    Les 6
+                    <h4>HTML Paragraf</h4>
                 </div>
                 <div class="tab-pane fade" id="html-7" role="tabpanel" aria-labelledby="html-7-tab">
-                    Les 7
+                    <h4>HTML Uslublar</h4>
                 </div>
                 <div class="tab-pane fade" id="html-8" role="tabpanel" aria-labelledby="html-8-tab">
-                    Les 8
+                    <h4>HTML Formatlash</h4>
                 </div>
                 <div class="tab-pane fade" id="html-9" role="tabpanel" aria-labelledby="html-9-tab">
-                    Les 9
+                    <h4>HTML Sitatalar</h4>
                 </div>
                 <div class="tab-pane fade" id="html-10" role="tabpanel" aria-labelledby="html-10-tab">
-                    Les 10
+                    <h4>HTML Izohlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-11" role="tabpanel" aria-labelledby="html-11-tab">
+                    <h4>HTML Ranglar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-12" role="tabpanel" aria-labelledby="html-12-tab">
+                    <h4>HTML CSS</h4>
+                </div>
+                <div class="tab-pane fade" id="html-13" role="tabpanel" aria-labelledby="html-13-tab">
+                    <h4>HTML Ilovalar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-14" role="tabpanel" aria-labelledby="html-14-tab">
+                    <h4>HTML Rasmlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-15" role="tabpanel" aria-labelledby="html-15-tab">
+                    <h4>HTML Jadvallar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-16" role="tabpanel" aria-labelledby="html-16-tab">
+                    <h4>HTML Ro'yxatlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-17" role="tabpanel" aria-labelledby="html-17-tab">
+                    <h4>HTML Bloklar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-18" role="tabpanel" aria-labelledby="html-18-tab">
+                    <h4>HTML Classlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-19" role="tabpanel" aria-labelledby="html-19-tab">
+                    <h4>HTML Id</h4>
+                </div>
+                <div class="tab-pane fade" id="html-20" role="tabpanel" aria-labelledby="html-20-tab">
+                    <h4>HTML Iframe</h4>
+                </div>
+                <div class="tab-pane fade" id="html-21" role="tabpanel" aria-labelledby="html-21-tab">
+                    <h4>HTML JavaScript</h4>
+                </div>
+                <div class="tab-pane fade" id="html-22" role="tabpanel" aria-labelledby="html-22-tab">
+                    <h4>HTML Fayl Manzili</h4>
+                </div>
+                <div class="tab-pane fade" id="html-23" role="tabpanel" aria-labelledby="html-23-tab">
+                    <h4>HTML Bosh</h4>
+                </div>
+                <div class="tab-pane fade" id="html-24" role="tabpanel" aria-labelledby="html-24-tab">
+                    <h4>HTML Tartibi</h4>
+                </div>
+                <div class="tab-pane fade" id="html-25" role="tabpanel" aria-labelledby="html-25-tab">
+                    <h4>HTML Moshlashuvchan</h4>
+                </div>
+                <div class="tab-pane fade" id="html-26" role="tabpanel" aria-labelledby="html-26-tab">
+                    <h4>HTML Komyuter Kodi</h4>
+                </div>
+                <div class="tab-pane fade" id="html-27" role="tabpanel" aria-labelledby="html-27-tab">
+                    <h4>HTML Belgilar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-28" role="tabpanel" aria-labelledby="html-28-tab">
+                    Les 28
+                </div>
+                <div class="tab-pane fade" id="html-29" role="tabpanel" aria-labelledby="html-29-tab">
+                    Les 29
+                </div>
+                <div class="tab-pane fade" id="html-30" role="tabpanel" aria-labelledby="html-30-tab">
+                    Les 30
                 </div>
             </div>
         </div>

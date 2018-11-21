@@ -86,7 +86,6 @@ a:focus {
 }
 
 #sidebar ul li a {
-    padding: 0px;
     font-size: 1.1em;
     display: block;
     width: 100%
@@ -105,6 +104,10 @@ a[aria-expanded="true"] {
 
 a[data-toggle="collapse"] {
     position: relative;
+}
+
+.nav-link {
+    padding: .2rem 1.1rem;
 }
 
 

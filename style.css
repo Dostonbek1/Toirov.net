@@ -64,8 +64,12 @@ a:focus {
     margin: 0;
 }
 
+.nav-item {
+    padding: 0;
+}
+
 .navbar-link {
-    padding: 0px 20px;
+    padding: 11px 20px;
     font-size: 20px;
 }
 

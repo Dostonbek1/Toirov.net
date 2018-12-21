@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="src/js/fontawesome/js/solid.js"></script>
+    <script src="src/js/fontawesome/js/fontawesome.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
 
 </head>
 
@@ -45,10 +47,19 @@
                         <a class="navbar-link" href="css.html">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-link" href="js.html">JS</a>
+                        <a class="navbar-link" href="js.html">JavaScript</a>
                     </li>
                     <li class="nav-item">
                         <a class="navbar-link" href="php.html">PHP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="php.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="php.html">JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="php.html">Python</a>
                     </li>
                 </ul>
             </div>
@@ -233,12 +244,93 @@
         <!-- Page Content  -->
         <div id="content">
             <div class="tab-content " style="padding:10px;background-color: white; font-size:16px;">
+
                 <div class="tab-pane fade show active" id="html-1" role="tabpanel" aria-labelledby="html-1-tab">
-                    <h4>HTML Kirish</h4>
+                    <h2>HTML Kirish</h2>
+                    <br />
+                    <div class="left-border" >
+                        <p>HTML bilan o'z vebsaytingizni yaratishingiz mumkin.</p>
+                        <p>Bu darsliklar sizga HTML haqida barcha narsalarni o'rgatadi.</p>
+                        <p>HTML o'rganish uchun.</p>
+                    </div>
+                    <br />
+                    <h4>Har bir bo'limlarda namunalar</h4>
+                    <br />
+                    <p>Bu HTML darsligi quyidagi kabi yuzlab HTML namumanalaridan tashkil topgan.</p>
+                    <br />
+                    <div class="code-block-container">
+                        <p>Namuna</p>
+                        <div class="left-border">
+                            <code>
+                                <span><</span>!DOCTYPE html<span>></span><br />
+                                <span><</span>html<span>></span><br />
+                                <span><</span>head<span>></span><br />
+                                &nbsp;&nbsp;<span><</span>title<span>></span>Page Title<span><</span>/title<span>></span><br />
+                                <span><</span>/head<span>></span><br />
+                                <span><</span>body<span>></span><br />
+                                
+                                &nbsp;&nbsp;<span><</span>h1>Birinchi sarlavha<span><</span>/h1<span>></span><br />
+                                &nbsp;&nbsp;<span><</span>p>Birinchi paragraf.<span><</span>/p<span>></span><br />
+                                
+                                <span><</span>/body<span>></span><br />
+                                <span><</span>/html<span>></span><br />
+                            </code>
+                        </div>
+                    </div>
+                    
                 </div>
+
                 <div class="tab-pane fade" id="html-2" role="tabpanel" aria-labelledby="html-2-tab">
-                    <h4>HTML Asoslari</h4>
+                    <h2>HTML Asoslari</h2><br />
+                    <h4>HTML nima?</h4>
+                    <br />
+                    <p>HTML Web sahifalar yaratish uchun standard belgilash tili hisoblanadi.</p>
+                    <ul>
+                        <li>HTML - Hyper Text Markup Language (Giper Matn Belgilash Tili)</li>
+                        <li>HTML Web sahifalar tuzilishini belgilash orqali tasvirlaydi</li>
+                        <li>HTML elementlari HTML sahifalarini tuzuvchi asoslari hisoblanadi</li>
+                        <li>HTML elementlari taglar orqali tasvirlanadi</li>
+                        <li>HTML taglar "sarlavha", "paragraf", "jadval" va boshqa tarkibiy qismlarga turli yorliqlar beradi</li>
+                        <li>Browser'lar taglarni ko'rsatmaydi, ammo ulardan sahifani tarkibini ko'rsatish uchun foydalanadi</li>
+                    </ul>
+                    <br />
+
+                    <h4>Sodda HTML dokument</h4>
+                    <div class="code-block-container">
+                        <p>Namuna</p>
+                        <div class="left-border">
+                            <code>
+                                <span><</span>!DOCTYPE html<span>></span><br />
+                                <span><</span>html<span>></span><br />
+                                <span><</span>head<span>></span><br />
+                                &nbsp;&nbsp;<span><</span>title<span>></span>Page Title<span><</span>/title<span>></span><br />
+                                <span><</span>/head<span>></span><br />
+                                <span><</span>body<span>></span><br />
+                                
+                                &nbsp;&nbsp;<span><</span>h1>Birinchi sarlavha<span><</span>/h1<span>></span><br />
+                                &nbsp;&nbsp;<span><</span>p>Birinchi paragraf.<span><</span>/p<span>></span><br />
+                                
+                                <span><</span>/body<span>></span><br />
+                                <span><</span>/html<span>></span><br />
+                            </code>
+                        </div>
+                    </div>
+                    <br />
+
+                    <h5>Namuna Tushunchasi</h5>
+                    <ul>
+                        <li><code><span><</span>!DOCTYPE html<span>></span></code> - dokumentni HTML fayl ekanligini e'lon qiladi</li>
+                        <li><code><span><</span>html<span>></span></code> - HTML sahifasini o'zak elementi</li>
+                        <li><code><span><</span>head<span>></span></code> - dokument haqida meta ma'lumotdan iborat</li>
+                        <li><code><span><</span>title<span>></span></code> - bu dokumentning nomini belgilaydi</li>
+                        <li><code><span><</span>body<span>></span></code> - sahifaning ko'rinuvchi tarkibidan iborat</li>
+                        <li><code><span><</span>h1></code> - katta sarlavhani belgilaydi</li>
+                        <li><code><span><</span>p></code> - paragrafni belgilaydi</li>
+                    </ul>
+                    
+
                 </div>
+
                 <div class="tab-pane fade" id="html-3" role="tabpanel" aria-labelledby="html-3-tab">
                     <h4>HTML Elementlar</h4>
                 </div>

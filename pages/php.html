@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Beruny Online Learning</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../src/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script src="../src/js/fontawesome/js/solid.js"></script>
+    <script src="../src/js/fontawesome/js/fontawesome.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <div id="top-bar">
+        <div style="margin: auto 1rem;display: block">
+            <img src="../src/images/logo2.png" style="width:120px;height:50px;display:inline-block;margin:10px 10px;" />
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin: .35rem 3rem .35rem 1rem">
+                <i class="fas fa-align-left"></i>
+                <span></span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  style="margin-right: 1rem">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="navbar-link" href="html.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="js.html">JS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="navbar-link" href="#">PHP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="jQuery.html">JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-link" href="python.html">Python</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <h4 style="padding: 15px 15px 0;">PHP Darsliklar</h4>
+            <ul class="nav nav-tabs list-unstyled components" role="" style="display: inline;">
+                <li class="nav-item">
+                    <a class="side-tab active" id="html-1-tab" data-toggle="tab" href="#html-1" role="tab" aria-controls="html-1" aria-selected="true">HTML Kirish</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-2-tab" data-toggle="tab" href="#html-2" role="tab" aria-controls="html-2" aria-selected="false">HTML Asoslar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-3-tab" data-toggle="tab" href="#html-3" role="tab" aria-controls="html-3" aria-selected="false">HTML Elementlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-4-tab" data-toggle="tab" href="#html-4" role="tab" aria-controls="html-4" aria-selected="false">HTML Attribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-5-tab" data-toggle="tab" href="#html-5" role="tab" aria-controls="html-5" aria-selected="false">HTML Sarlavha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-6-tab" data-toggle="tab" href="#html-6" role="tab" aria-controls="html-6" aria-selected="false">HTML Paragraf</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-7-tab" data-toggle="tab" href="#html-7" role="tab" aria-controls="html-7" aria-selected="false">HTML Uslublar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-8-tab" data-toggle="tab" href="#html-8" role="tab" aria-controls="html-8" aria-selected="false">HTML Formatlash</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-9-tab" data-toggle="tab" href="#html-9" role="tab" aria-controls="html-9" aria-selected="false">HTML Sitatalar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-10-tab" data-toggle="tab" href="#html-10" role="tab" aria-controls="html-10" aria-selected="false">HTML Izohlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-11-tab" data-toggle="tab" href="#html-11" role="tab" aria-controls="html-11" aria-selected="false">HTML Ranglar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-12-tab" data-toggle="tab" href="#html-12" role="tab" aria-controls="html-12" aria-selected="false">HTML CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-13-tab" data-toggle="tab" href="#html-13" role="tab" aria-controls="html-13" aria-selected="false">HTML Ilovalar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-14-tab" data-toggle="tab" href="#html-14" role="tab" aria-controls="html-14" aria-selected="false">HTML Rasmlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-15-tab" data-toggle="tab" href="#html-15" role="tab" aria-controls="html-15" aria-selected="false">HTML Jadvallar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-16-tab" data-toggle="tab" href="#html-16" role="tab" aria-controls="html-16" aria-selected="false">HTML Ro'yxatlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-17-tab" data-toggle="tab" href="#html-17" role="tab" aria-controls="html-17" aria-selected="false">HTML Bloklar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-18-tab" data-toggle="tab" href="#html-18" role="tab" aria-controls="html-18" aria-selected="false">HTML Classlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-19-tab" data-toggle="tab" href="#html-19" role="tab" aria-controls="html-19" aria-selected="false">HTML Id</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-20-tab" data-toggle="tab" href="#html-20" role="tab" aria-controls="html-20" aria-selected="false">HTML Iframe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-21-tab" data-toggle="tab" href="#html-21" role="tab" aria-controls="html-21" aria-selected="false">HTML JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-22-tab" data-toggle="tab" href="#html-22" role="tab" aria-controls="html-22" aria-selected="false">HTML Fayl Manzili</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-23-tab" data-toggle="tab" href="#html-23" role="tab" aria-controls="html-23" aria-selected="false">HTML Bosh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-24-tab" data-toggle="tab" href="#html-24" role="tab" aria-controls="html-24" aria-selected="false">HTML Tartibi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-25-tab" data-toggle="tab" href="#html-25" role="tab" aria-controls="html-25" aria-selected="false">HTML Moslashuvchan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-26-tab" data-toggle="tab" href="#html-26" role="tab" aria-controls="html-26" aria-selected="false">HTML Komyuter Kodi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-27-tab" data-toggle="tab" href="#html-27" role="tab" aria-controls="html-27" aria-selected="false">HTML Belgilar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-28-tab" data-toggle="tab" href="#html-28" role="tab" aria-controls="html-28" aria-selected="false">HTML Charset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-29-tab" data-toggle="tab" href="#html-29" role="tab" aria-controls="html-29" aria-selected="false">HTML URL Encode</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-30-tab" data-toggle="tab" href="#html-30" role="tab" aria-controls="html-30" aria-selected="false">HTML XHTML</a>
+                </li>
+
+                <h4 style="padding: 15px 15px 0;">HTML Form</h4>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-31-tab" data-toggle="tab" href="#html-31" role="tab" aria-controls="html-31" aria-selected="false">HTML Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-32-tab" data-toggle="tab" href="#html-32" role="tab" aria-controls="html-32" aria-selected="false">HTML Form Elementlari</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-33-tab" data-toggle="tab" href="#html-33" role="tab" aria-controls="html-33" aria-selected="false">HTML Input Turlari</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-34-tab" data-toggle="tab" href="#html-34" role="tab" aria-controls="html-34" aria-selected="false">HTML Input Attributelari</a>
+                </li>
+
+                <h4 style="padding: 15px 15px 0;">HTML5</h4>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-35-tab" data-toggle="tab" href="#html-35" role="tab" aria-controls="html-35" aria-selected="false">HTML5 Kirish</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-36-tab" data-toggle="tab" href="#html-36" role="tab" aria-controls="html-36" aria-selected="false">HTML5 Yordam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-37-tab" data-toggle="tab" href="#html-37" role="tab" aria-controls="html-37" aria-selected="false">HTML5 Yangi Elementlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-38-tab" data-toggle="tab" href="#html-38" role="tab" aria-controls="html-38" aria-selected="false">HTML5 Semantika</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-39-tab" data-toggle="tab" href="#html-39" role="tab" aria-controls="html-39" aria-selected="false">HTML5 Ko'chish</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-40-tab" data-toggle="tab" href="#html-40" role="tab" aria-controls="html-40" aria-selected="false">HTML Uslub Ko'rsatma</a>
+                </li>
+
+                <h4 style="padding: 15px 15px 0;">HTML Grafika</h4>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-41-tab" data-toggle="tab" href="#html-41" role="tab" aria-controls="html-41" aria-selected="false">HTML Canvas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-42-tab" data-toggle="tab" href="#html-42" role="tab" aria-controls="html-42" aria-selected="false">HTML SVG</a>
+                </li>
+
+                <h4 style="padding: 15px 15px 0;">HTML Media</h4>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-43-tab" data-toggle="tab" href="#html-43" role="tab" aria-controls="html-43" aria-selected="false">HTML Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-44-tab" data-toggle="tab" href="#html-44" role="tab" aria-controls="html-44" aria-selected="false">HTML Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-45-tab" data-toggle="tab" href="#html-45" role="tab" aria-controls="html-45" aria-selected="false">HTML Audio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-46-tab" data-toggle="tab" href="#html-46" role="tab" aria-controls="html-46" aria-selected="false">HTML Plug-in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-47-tab" data-toggle="tab" href="#html-47" role="tab" aria-controls="html-47" aria-selected="false">HTML YouTube</a>
+                </li>
+
+                <h4 style="padding: 15px 15px 0;">HTML API</h4>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-48-tab" data-toggle="tab" href="#html-48" role="tab" aria-controls="html-48" aria-selected="false">HTML Geolokatsiya</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-49-tab" data-toggle="tab" href="#html-49" role="tab" aria-controls="html-49" aria-selected="false">HTML Drag/Drop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-50-tab" data-toggle="tab" href="#html-50" role="tab" aria-controls="html-50" aria-selected="false">HTML Web Storage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-51-tab" data-toggle="tab" href="#html-51" role="tab" aria-controls="html-51" aria-selected="false">HTML Web Workers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="side-tab" id="html-52-tab" data-toggle="tab" href="#html-52" role="tab" aria-controls="html-52" aria-selected="false">HTML SSE</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="tab-content " style="padding:10px;background-color: white; font-size:16px;">
+                <div class="tab-pane fade show active" id="html-1" role="tabpanel" aria-labelledby="html-1-tab">
+                    <h4>HTML Kirish</h4>
+                </div>
+                <div class="tab-pane fade" id="html-2" role="tabpanel" aria-labelledby="html-2-tab">
+                    <h4>HTML Asoslari</h4>
+                </div>
+                <div class="tab-pane fade" id="html-3" role="tabpanel" aria-labelledby="html-3-tab">
+                    <h4>HTML Elementlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-4" role="tabpanel" aria-labelledby="html-4-tab">
+                    <h4>HTML Attribute</h4>
+                </div>
+                <div class="tab-pane fade" id="html-5" role="tabpanel" aria-labelledby="html-5-tab">
+                    <h4>HTML Sarlavha</h4>
+                </div>
+                <div class="tab-pane fade" id="html-6" role="tabpanel" aria-labelledby="html-6-tab">
+                    <h4>HTML Paragraf</h4>
+                </div>
+                <div class="tab-pane fade" id="html-7" role="tabpanel" aria-labelledby="html-7-tab">
+                    <h4>HTML Uslublar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-8" role="tabpanel" aria-labelledby="html-8-tab">
+                    <h4>HTML Formatlash</h4>
+                </div>
+                <div class="tab-pane fade" id="html-9" role="tabpanel" aria-labelledby="html-9-tab">
+                    <h4>HTML Sitatalar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-10" role="tabpanel" aria-labelledby="html-10-tab">
+                    <h4>HTML Izohlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-11" role="tabpanel" aria-labelledby="html-11-tab">
+                    <h4>HTML Ranglar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-12" role="tabpanel" aria-labelledby="html-12-tab">
+                    <h4>HTML CSS</h4>
+                </div>
+                <div class="tab-pane fade" id="html-13" role="tabpanel" aria-labelledby="html-13-tab">
+                    <h4>HTML Ilovalar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-14" role="tabpanel" aria-labelledby="html-14-tab">
+                    <h4>HTML Rasmlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-15" role="tabpanel" aria-labelledby="html-15-tab">
+                    <h4>HTML Jadvallar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-16" role="tabpanel" aria-labelledby="html-16-tab">
+                    <h4>HTML Ro'yxatlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-17" role="tabpanel" aria-labelledby="html-17-tab">
+                    <h4>HTML Bloklar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-18" role="tabpanel" aria-labelledby="html-18-tab">
+                    <h4>HTML Classlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-19" role="tabpanel" aria-labelledby="html-19-tab">
+                    <h4>HTML Id</h4>
+                </div>
+                <div class="tab-pane fade" id="html-20" role="tabpanel" aria-labelledby="html-20-tab">
+                    <h4>HTML Iframe</h4>
+                </div>
+                <div class="tab-pane fade" id="html-21" role="tabpanel" aria-labelledby="html-21-tab">
+                    <h4>HTML JavaScript</h4>
+                </div>
+                <div class="tab-pane fade" id="html-22" role="tabpanel" aria-labelledby="html-22-tab">
+                    <h4>HTML Fayl Manzili</h4>
+                </div>
+                <div class="tab-pane fade" id="html-23" role="tabpanel" aria-labelledby="html-23-tab">
+                    <h4>HTML Bosh</h4>
+                </div>
+                <div class="tab-pane fade" id="html-24" role="tabpanel" aria-labelledby="html-24-tab">
+                    <h4>HTML Tartibi</h4>
+                </div>
+                <div class="tab-pane fade" id="html-25" role="tabpanel" aria-labelledby="html-25-tab">
+                    <h4>HTML Moshlashuvchan</h4>
+                </div>
+                <div class="tab-pane fade" id="html-26" role="tabpanel" aria-labelledby="html-26-tab">
+                    <h4>HTML Komyuter Kodi</h4>
+                </div>
+                <div class="tab-pane fade" id="html-27" role="tabpanel" aria-labelledby="html-27-tab">
+                    <h4>HTML Belgilar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-28" role="tabpanel" aria-labelledby="html-28-tab">
+                    <h4>HTML Charset</h4>
+                </div>
+                <div class="tab-pane fade" id="html-29" role="tabpanel" aria-labelledby="html-29-tab">
+                    <h4>HTML URL Encode</h4>
+                </div>
+                <div class="tab-pane fade" id="html-30" role="tabpanel" aria-labelledby="html-30-tab">
+                    <h4>HTML XHTML</h4>
+                </div>
+                <div class="tab-pane fade" id="html-31" role="tabpanel" aria-labelledby="html-31-tab">
+                    <h4>HTML Form</h4>
+                </div>
+                <div class="tab-pane fade" id="html-32" role="tabpanel" aria-labelledby="html-32-tab">
+                    <h4>HTML Form Elementlari</h4>
+                </div>
+                <div class="tab-pane fade" id="html-33" role="tabpanel" aria-labelledby="html-33-tab">
+                    <h4>HTML Input Turlari</h4>
+                </div>
+                <div class="tab-pane fade" id="html-34" role="tabpanel" aria-labelledby="html-34-tab">
+                    <h4>HTML Input Attributelari</h4>
+                </div>
+                <div class="tab-pane fade" id="html-35" role="tabpanel" aria-labelledby="html-35-tab">
+                    <h4>HTML5 Kirish</h4>
+                </div>
+                <div class="tab-pane fade" id="html-36" role="tabpanel" aria-labelledby="html-36-tab">
+                    <h4>HTML5 Yordam</h4>
+                </div>
+                <div class="tab-pane fade" id="html-37" role="tabpanel" aria-labelledby="html-37-tab">
+                    <h4>HTML5 Yangi Elementlar</h4>
+                </div>
+                <div class="tab-pane fade" id="html-38" role="tabpanel" aria-labelledby="html-38-tab">
+                    <h4>HTML5 Semantika</h4>
+                </div>
+                <div class="tab-pane fade" id="html-39" role="tabpanel" aria-labelledby="html-39-tab">
+                    <h4>HTML5 Ko'chish</h4>
+                </div>
+                <div class="tab-pane fade" id="html-40" role="tabpanel" aria-labelledby="html-40-tab">
+                    <h4>HTML Uslub Ko'rsatma</h4>
+                </div>
+                <div class="tab-pane fade" id="html-41" role="tabpanel" aria-labelledby="html-41-tab">
+                    <h4>HTML Canvas</h4>
+                </div>
+                <div class="tab-pane fade" id="html-42" role="tabpanel" aria-labelledby="html-42-tab">
+                    <h4>HTML SVG</h4>
+                </div>
+                <div class="tab-pane fade" id="html-43" role="tabpanel" aria-labelledby="html-43-tab">
+                    <h4>HTML Media</h4>
+                </div>
+                <div class="tab-pane fade" id="html-44" role="tabpanel" aria-labelledby="html-44-tab">
+                    <h4>HTML Video</h4>
+                </div>
+                <div class="tab-pane fade" id="html-45" role="tabpanel" aria-labelledby="html-45-tab">
+                    <h4>HTML Audio</h4>
+                </div>
+                <div class="tab-pane fade" id="html-46" role="tabpanel" aria-labelledby="html-46-tab">
+                    <h4>HTML Plug-in</h4>
+                </div>
+                <div class="tab-pane fade" id="html-47" role="tabpanel" aria-labelledby="html-47-tab">
+                    <h4>HTML YouTube</h4>
+                </div>
+                <div class="tab-pane fade" id="html-48" role="tabpanel" aria-labelledby="html-48-tab">
+                    <h4>HTML Geolokatsiya</h4>
+                </div>
+                <div class="tab-pane fade" id="html-49" role="tabpanel" aria-labelledby="html-49-tab">
+                    <h4>HTML Drag/Drop</h4>
+                </div>
+                <div class="tab-pane fade" id="html-50" role="tabpanel" aria-labelledby="html-50-tab">
+                    <h4>HTML Web Storage</h4>
+                </div>
+                <div class="tab-pane fade" id="html-51" role="tabpanel" aria-labelledby="html-51-tab">
+                    <h4>HTML Web Workers</h4>
+                </div>
+                <div class="tab-pane fade" id="html-52" role="tabpanel" aria-labelledby="html-52-tab">
+                    <h4>HTML SSE</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
